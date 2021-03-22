@@ -6,15 +6,20 @@
 //
 
 import SwiftUI
+import KingfisherSwiftUI
 
 struct StandardHomeView: View {
+    var movie: Movie
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        KFImage(movie.thumbnailURL)
+            .resizable()
+            .scaledToFill()
     }
 }
 
 struct StandardHomeView_Previews: PreviewProvider {
     static var previews: some View {
-        StandardHomeView()
+        StandardHomeView(movie: exampleMovie1)
     }
 }
