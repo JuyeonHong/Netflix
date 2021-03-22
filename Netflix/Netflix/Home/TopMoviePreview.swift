@@ -6,15 +6,59 @@
 //
 
 import SwiftUI
+import KingfisherSwiftUI
 
 struct TopMoviePreview: View {
+    var movie: Movie
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            KFImage(movie.thumbnailURL)
+                .resizable()
+                .scaledToFill()
+                .clipped()
+            
+            
+            VStack {
+                Spacer()
+                
+                HStack {
+                    ForEach(movie.categories, id: \.self) { category in
+                        HStack {
+                            Text(category)
+                            
+                            if !isCategoryLast(category) {
+                                Image(systemName: "circle.fill")
+                                    .foregroundColor(.blue)
+                                    .font(.system(size: 3))
+                            }
+                        }
+                    }
+                }
+                
+                Text("Categories")
+                Text("Row of buttons")
+            }
+        }
     }
 }
 
 struct TopMoviePreview_Previews: PreviewProvider {
     static var previews: some View {
-        TopMoviePreview()
+        TopMoviePreview(movie: exampleMovie1)
+    }
+}
+
+extension TopMoviePreview {
+    func isCategoryLast(_ cat: String) -> Bool {
+        let catCount = movie.categories.count
+        // if a + 1 != 4
+        if let index = movie.categories.firstIndex(of: cat) {
+            if index + 1 != catCount {
+                return false
+            }
+        }
+        
+        return true
     }
 }
