@@ -17,6 +17,7 @@
 		5793400126086C30006338C0 /* StandardHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5793400026086C30006338C0 /* StandardHomeView.swift */; };
 		5793400526086C7E006338C0 /* GlobalHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5793400426086C7E006338C0 /* GlobalHelpers.swift */; };
 		5793400926086E67006338C0 /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5793400826086E67006338C0 /* HomeVM.swift */; };
+		5793400E26088F0F006338C0 /* TopMoviePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5793400D26088F0F006338C0 /* TopMoviePreview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		5793400026086C30006338C0 /* StandardHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardHomeView.swift; sourceTree = "<group>"; };
 		5793400426086C7E006338C0 /* GlobalHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalHelpers.swift; sourceTree = "<group>"; };
 		5793400826086E67006338C0 /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
+		5793400D26088F0F006338C0 /* TopMoviePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoviePreview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 			children = (
 				57933FF226086951006338C0 /* HomeView.swift */,
 				5793400026086C30006338C0 /* StandardHomeView.swift */,
+				5793400D26088F0F006338C0 /* TopMoviePreview.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -190,6 +193,7 @@
 				5793400926086E67006338C0 /* HomeVM.swift in Sources */,
 				57933FF326086951006338C0 /* HomeView.swift in Sources */,
 				57933FE52608599C006338C0 /* ContentView.swift in Sources */,
+				5793400E26088F0F006338C0 /* TopMoviePreview.swift in Sources */,
 				57933FFD26086BCD006338C0 /* Movie.swift in Sources */,
 				57933FE32608599C006338C0 /* NetflixApp.swift in Sources */,
 			);
