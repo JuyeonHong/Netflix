@@ -19,6 +19,7 @@
 		5793400926086E67006338C0 /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5793400826086E67006338C0 /* HomeVM.swift */; };
 		5793400E26088F0F006338C0 /* TopMoviePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5793400D26088F0F006338C0 /* TopMoviePreview.swift */; };
 		5793401326098471006338C0 /* SmallVerticalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5793401226098471006338C0 /* SmallVerticalButton.swift */; };
+		579340172609AF26006338C0 /* WhiteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579340162609AF26006338C0 /* WhiteButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		5793400826086E67006338C0 /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
 		5793400D26088F0F006338C0 /* TopMoviePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoviePreview.swift; sourceTree = "<group>"; };
 		5793401226098471006338C0 /* SmallVerticalButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallVerticalButton.swift; sourceTree = "<group>"; };
+		579340162609AF26006338C0 /* WhiteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiteButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 				5793400026086C30006338C0 /* StandardHomeView.swift */,
 				5793400D26088F0F006338C0 /* TopMoviePreview.swift */,
 				5793401226098471006338C0 /* SmallVerticalButton.swift */,
+				579340162609AF26006338C0 /* WhiteButton.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 				57933FFD26086BCD006338C0 /* Movie.swift in Sources */,
 				57933FE32608599C006338C0 /* NetflixApp.swift in Sources */,
 				5793401326098471006338C0 /* SmallVerticalButton.swift in Sources */,
+				579340172609AF26006338C0 /* WhiteButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
