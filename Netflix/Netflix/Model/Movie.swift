@@ -12,5 +12,5 @@ struct Movie: Identifiable {
     var name: String
     var thumbnailURL: URL
     
-    
+    var categories: [String]
 }
