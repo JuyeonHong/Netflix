@@ -51,6 +51,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		57077EAC2627D6CD005DA38E /* HelperView */ = {
+			isa = PBXGroup;
+			children = (
+				5793400D26088F0F006338C0 /* TopMoviePreview.swift */,
+				579340162609AF26006338C0 /* WhiteButton.swift */,
+				5793401226098471006338C0 /* SmallVerticalButton.swift */,
+				5793400026086C30006338C0 /* StandardHomeView.swift */,
+			);
+			path = HelperView;
+			sourceTree = "<group>";
+		};
 		57933FD62608599C006338C0 = {
 			isa = PBXGroup;
 			children = (
@@ -74,7 +85,8 @@
 				57933FE42608599C006338C0 /* ContentView.swift */,
 				5793400326086C70006338C0 /* Helper */,
 				57933FFB26086BBE006338C0 /* Model */,
-				57933FF526086960006338C0 /* Home */,
+				57933FF526086960006338C0 /* HomeView */,
+				57077EAC2627D6CD005DA38E /* HelperView */,
 				57933FE62608599D006338C0 /* Assets.xcassets */,
 				57933FEB2608599D006338C0 /* Info.plist */,
 				57933FE82608599D006338C0 /* Preview Content */,
@@ -90,23 +102,19 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		57933FF526086960006338C0 /* Home */ = {
+		57933FF526086960006338C0 /* HomeView */ = {
 			isa = PBXGroup;
 			children = (
 				57933FF226086951006338C0 /* HomeView.swift */,
-				5793400026086C30006338C0 /* StandardHomeView.swift */,
-				5793400D26088F0F006338C0 /* TopMoviePreview.swift */,
-				5793401226098471006338C0 /* SmallVerticalButton.swift */,
-				579340162609AF26006338C0 /* WhiteButton.swift */,
+				5793400826086E67006338C0 /* HomeVM.swift */,
 			);
-			path = Home;
+			path = HomeView;
 			sourceTree = "<group>";
 		};
 		57933FFB26086BBE006338C0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				57933FFC26086BCD006338C0 /* Movie.swift */,
-				5793400826086E67006338C0 /* HomeVM.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";

@@ -72,7 +72,7 @@ struct TopRowButtons: View {
                     .scaledToFit()
                     .frame(width: 50)
             })
-            .buttonStyle(PlainButtonStyle())
+//            .buttonStyle(PlainButtonStyle())
             
             Spacer()
             
