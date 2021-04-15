@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		57077EAF2627D739005DA38E /* MovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57077EAE2627D739005DA38E /* MovieDetail.swift */; };
+		57077EB426280EAF005DA38E /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57077EB326280EAF005DA38E /* Episode.swift */; };
 		57933FE32608599C006338C0 /* NetflixApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57933FE22608599C006338C0 /* NetflixApp.swift */; };
 		57933FE52608599C006338C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57933FE42608599C006338C0 /* ContentView.swift */; };
 		57933FE72608599D006338C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57933FE62608599D006338C0 /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 
 /* Begin PBXFileReference section */
 		57077EAE2627D739005DA38E /* MovieDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetail.swift; sourceTree = "<group>"; };
+		57077EB326280EAF005DA38E /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
 		57933FDF2608599C006338C0 /* Netflix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Netflix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57933FE22608599C006338C0 /* NetflixApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetflixApp.swift; sourceTree = "<group>"; };
 		57933FE42608599C006338C0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				57933FFC26086BCD006338C0 /* Movie.swift */,
+				57077EB326280EAF005DA38E /* Episode.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5793400526086C7E006338C0 /* GlobalHelpers.swift in Sources */,
+				57077EB426280EAF005DA38E /* Episode.swift in Sources */,
 				5793400126086C30006338C0 /* StandardHomeView.swift in Sources */,
 				5793400926086E67006338C0 /* HomeVM.swift in Sources */,
 				57933FF326086951006338C0 /* HomeView.swift in Sources */,
