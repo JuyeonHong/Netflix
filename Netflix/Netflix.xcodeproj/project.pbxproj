@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		57077EAF2627D739005DA38E /* MovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57077EAE2627D739005DA38E /* MovieDetail.swift */; };
 		57077EB426280EAF005DA38E /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57077EB326280EAF005DA38E /* Episode.swift */; };
+		57583BBB262D14F500CBA091 /* CustomTabSwitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57583BBA262D14F500CBA091 /* CustomTabSwitcher.swift */; };
 		57933FE32608599C006338C0 /* NetflixApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57933FE22608599C006338C0 /* NetflixApp.swift */; };
 		57933FE52608599C006338C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57933FE42608599C006338C0 /* ContentView.swift */; };
 		57933FE72608599D006338C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57933FE62608599D006338C0 /* Assets.xcassets */; };
@@ -27,6 +28,7 @@
 /* Begin PBXFileReference section */
 		57077EAE2627D739005DA38E /* MovieDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetail.swift; sourceTree = "<group>"; };
 		57077EB326280EAF005DA38E /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
+		57583BBA262D14F500CBA091 /* CustomTabSwitcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabSwitcher.swift; sourceTree = "<group>"; };
 		57933FDF2608599C006338C0 /* Netflix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Netflix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57933FE22608599C006338C0 /* NetflixApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetflixApp.swift; sourceTree = "<group>"; };
 		57933FE42608599C006338C0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				57077EAE2627D739005DA38E /* MovieDetail.swift */,
+				57583BBA262D14F500CBA091 /* CustomTabSwitcher.swift */,
 			);
 			path = MovieDetailView;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 				5793400E26088F0F006338C0 /* TopMoviePreview.swift in Sources */,
 				57933FFD26086BCD006338C0 /* Movie.swift in Sources */,
 				57933FE32608599C006338C0 /* NetflixApp.swift in Sources */,
+				57583BBB262D14F500CBA091 /* CustomTabSwitcher.swift in Sources */,
 				5793401326098471006338C0 /* SmallVerticalButton.swift in Sources */,
 				579340172609AF26006338C0 /* PlayButton.swift in Sources */,
 				57077EAF2627D739005DA38E /* MovieDetail.swift in Sources */,
