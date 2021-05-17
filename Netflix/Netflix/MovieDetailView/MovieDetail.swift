@@ -4,7 +4,6 @@
 //
 //  Created by hongjuyeon_dev on 2021/04/15.
 //
-// resume preview: option command p
 
 import SwiftUI
 
