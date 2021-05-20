@@ -28,6 +28,7 @@
 		57BEAC2C2655F0C900A026E2 /* SwiftUIVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BEAC2B2655F0C900A026E2 /* SwiftUIVideoView.swift */; };
 		57BEAC302655F1E600A026E2 /* VideoPreviewImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BEAC2F2655F1E600A026E2 /* VideoPreviewImage.swift */; };
 		57BEAC382655F97100A026E2 /* TrailerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BEAC372655F97100A026E2 /* TrailerList.swift */; };
+		57BEAC3B265629D800A026E2 /* EpisodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BEAC3A265629D800A026E2 /* EpisodeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		57BEAC2B2655F0C900A026E2 /* SwiftUIVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIVideoView.swift; sourceTree = "<group>"; };
 		57BEAC2F2655F1E600A026E2 /* VideoPreviewImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPreviewImage.swift; sourceTree = "<group>"; };
 		57BEAC372655F97100A026E2 /* TrailerList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailerList.swift; sourceTree = "<group>"; };
+		57BEAC3A265629D800A026E2 /* EpisodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				57583BBA262D14F500CBA091 /* CustomTabSwitcher.swift */,
 				5770035126524FF800C9150A /* MoreLikeThis.swift */,
 				57BEAC372655F97100A026E2 /* TrailerList.swift */,
+				57BEAC3A265629D800A026E2 /* EpisodeView.swift */,
 			);
 			path = MovieDetailView;
 			sourceTree = "<group>";
@@ -251,6 +254,7 @@
 				57933FF326086951006338C0 /* HomeView.swift in Sources */,
 				57933FE52608599C006338C0 /* ContentView.swift in Sources */,
 				5793400E26088F0F006338C0 /* TopMoviePreview.swift in Sources */,
+				57BEAC3B265629D800A026E2 /* EpisodeView.swift in Sources */,
 				57933FFD26086BCD006338C0 /* Movie.swift in Sources */,
 				57933FE32608599C006338C0 /* NetflixApp.swift in Sources */,
 				5770035226524FF800C9150A /* MoreLikeThis.swift in Sources */,
