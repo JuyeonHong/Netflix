@@ -10,6 +10,22 @@
 import Foundation
 import SwiftUI
 
+let exampleVideoURL = URL(string: "https://www.radiantmdeiaplayer.com/media/big-buck-bunny-360.mp4")!
+
+let exampleImageURL = URL(string: "https://picsum.photos/300/104")!
+let exampleImageURL2 = URL(string: "https://picsum.photos/300/105")!
+let exampleImageURL3 = URL(string: "https://picsum.photos/300/106")!
+
+var randomExampleImageURL: URL {
+    return [exampleImageURL, exampleImageURL2, exampleImageURL3].randomElement() ?? exampleImageURL
+}
+
+let exampleTrailer1 = Trailer(name: "Season 3 Trailer", videoURL: exampleVideoURL, thumbnailImageURL: randomExampleImageURL)
+let exampleTrailer2 = Trailer(name: "The Hero's Journey", videoURL: exampleVideoURL, thumbnailImageURL: randomExampleImageURL)
+let exampleTrailer3 = Trailer(name: "The Mysterious", videoURL: exampleVideoURL, thumbnailImageURL: randomExampleImageURL)
+
+let exampleTrailers = [exampleTrailer1, exampleTrailer2, exampleTrailer3]
+
 let exampleMovie1 = Movie(id: UUID().uuidString,
                           name: "DARK",
                           thumbnailURL: URL(string: "https://picsum.photos/200/300")!,
@@ -20,7 +36,8 @@ let exampleMovie1 = Movie(id: UUID().uuidString,
                           defaultEpisodeInfo: exampleEpisodeInfo1,
                           creators: "Christopher Nolan",
                           cast: "Leonardo DiCaprio, Joseph Gordon-Levitt, Elliot Page",
-                          moreLikeThisMovies: [exampleMovie2, exampleMovie3, exampleMovie4, exampleMovie5, exampleMovie6, exampleMovie7])
+                          moreLikeThisMovies: [exampleMovie2, exampleMovie3, exampleMovie4, exampleMovie5, exampleMovie6, exampleMovie7],
+                          trailers: exampleTrailers)
 let exampleMovie2 = Movie(id: UUID().uuidString,
                           name: "Travelers",
                           thumbnailURL: URL(string: "https://picsum.photos/200/300/")!,
@@ -32,7 +49,8 @@ let exampleMovie2 = Movie(id: UUID().uuidString,
                           creators: "Christopher Nolan",
                           cast: "Leonardo DiCaprio, Joseph Gordon-Levitt, Elliot Page",
                           moreLikeThisMovies: [],
-                          promotionHeadline: "Best Rated Show")
+                          promotionHeadline: "Best Rated Show",
+                          trailers: exampleTrailers)
 let exampleMovie3 = Movie(id: UUID().uuidString,
                           name: "Community",
                           thumbnailURL: URL(string: "https://picsum.photos/200/301")!,
@@ -43,7 +61,8 @@ let exampleMovie3 = Movie(id: UUID().uuidString,
                           defaultEpisodeInfo: exampleEpisodeInfo1,
                           creators: "Christopher Nolan",
                           cast: "Leonardo DiCaprio, Joseph Gordon-Levitt, Elliot Page",
-                          moreLikeThisMovies: [])
+                          moreLikeThisMovies: [],
+                          trailers: exampleTrailers)
 let exampleMovie4 = Movie(id: UUID().uuidString,
                           name: "Alone",
                           thumbnailURL: URL(string: "https://picsum.photos/200/302")!,
@@ -55,7 +74,8 @@ let exampleMovie4 = Movie(id: UUID().uuidString,
                           creators: "Christopher Nolan",
                           cast: "Leonardo DiCaprio, Joseph Gordon-Levitt, Elliot Page",
                           moreLikeThisMovies: [],
-                          promotionHeadline: "New episode coming soon")
+                          promotionHeadline: "New episode coming soon",
+                          trailers: exampleTrailers)
 let exampleMovie5 = Movie(id: UUID().uuidString,
                           name: "Hannibal",
                           thumbnailURL: URL(string: "https://picsum.photos/200/303")!,
@@ -66,7 +86,8 @@ let exampleMovie5 = Movie(id: UUID().uuidString,
                           defaultEpisodeInfo: exampleEpisodeInfo1,
                           creators: "Christopher Nolan",
                           cast: "Leonardo DiCaprio, Joseph Gordon-Levitt, Elliot Page",
-                          moreLikeThisMovies: [])
+                          moreLikeThisMovies: [],
+                          trailers: exampleTrailers)
 let exampleMovie6 = Movie(id: UUID().uuidString,
                           name: "After Life",
                           thumbnailURL: URL(string: "https://picsum.photos/200/304")!,
@@ -78,7 +99,8 @@ let exampleMovie6 = Movie(id: UUID().uuidString,
                           creators: "Christopher Nolan",
                           cast: "Leonardo DiCaprio, Joseph Gordon-Levitt, Elliot Page",
                           moreLikeThisMovies: [],
-                          promotionHeadline: "Watch Season 6 Now")
+                          promotionHeadline: "Watch Season 6 Now",
+                          trailers: exampleTrailers)
 let exampleMovie7 = Movie(id: UUID().uuidString,
                           name: "After Life",
                           thumbnailURL: URL(string: "https://picsum.photos/200/304")!,
@@ -90,7 +112,8 @@ let exampleMovie7 = Movie(id: UUID().uuidString,
                           creators: "Christopher Nolan",
                           cast: "Leonardo DiCaprio, Joseph Gordon-Levitt, Elliot Page",
                           moreLikeThisMovies: [],
-                          promotionHeadline: "Watch Season 7 Now")
+                          promotionHeadline: "Watch Season 7 Now",
+                          trailers: exampleTrailers)
 
 var exampleMovies: [Movie] {
     return [exampleMovie1, exampleMovie2, exampleMovie3, exampleMovie4, exampleMovie5, exampleMovie6].shuffled()
