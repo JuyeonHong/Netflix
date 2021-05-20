@@ -14,11 +14,11 @@ struct EpisodeView: View {
     @Binding var selectedSeason: Int
     
     func getEpisode(forSeason season: Int) -> [Episode] {
-        return episodes.filter({ $0.season == season})
+        return episodes.filter({ $0.season == season })
     }
     
     var body: some View {
-        VStack {
+        VStack(spacing: 14) {
             // season picker
             
             HStack {
@@ -26,7 +26,7 @@ struct EpisodeView: View {
                     showSeasonPicker = true
                 }, label: {
                     Group {
-                        Text("Season 1")
+                        Text("Season \(selectedSeason)")
                         Image(systemName: "chevron.down")
                     }
                     .font(.system(size: 16))
@@ -37,12 +37,38 @@ struct EpisodeView: View {
             
             // episode list
             ForEach(getEpisode(forSeason: selectedSeason)) { episode in
-                Text("test")
+                VStack(alignment: .leading) {
+                    // Hstack with preview image
+                    HStack {
+                        VideoPreviewImage(imageURL: episode.thumbnailURL, videoURL: episode.videoURL)
+                            .frame(width: 120, height: 70)
+                            .clipped()
+                        
+                        VStack(alignment: .leading) {
+                            Text("\(episode.episodeNumber). \(episode.name)")
+                                .font(.system(size: 16))
+                            Text("\(episode.length)")
+                                .font(.system(size: 12))
+                                .foregroundColor(.gray)
+                        }
+                        
+                        Spacer()
+                        
+                        Image(systemName: "arrow.down.to.line.alt")
+                    }
+                    
+                    // description
+                    Text(episode.description)
+                        .font(.system(size: 13))
+                        .lineLimit(3)
+                }
+                .padding(.bottom, 20)
             }
             
             Spacer()
         }
         .foregroundColor(.white)
+        .padding(.horizontal, 20)
     }
 }
 
