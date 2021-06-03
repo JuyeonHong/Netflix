@@ -21,6 +21,7 @@ class HomeVM: ObservableObject {
     public func getMovie(forCat cat: String, andHomeRow homeRow: HomeTopRow, andGenre genre: HomeGenre ) -> [Movie] {
         
         switch homeRow {
+        
         case .home:
             return movies[cat] ?? []
             
@@ -31,8 +32,8 @@ class HomeVM: ObservableObject {
             return (movies[cat] ?? []).filter({ $0.movieType == .movie  && $0.genre == genre })
             
         case .myList:
-            // TODO: Setup MyList Property
             return movies[cat] ?? []
+            // TODO: Setup MyList Property
              
         }
     }

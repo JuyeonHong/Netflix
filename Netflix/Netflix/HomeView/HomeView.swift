@@ -94,7 +94,8 @@ struct HomeView: View {
                         
                         Spacer()
                         
-                        ScrollView(.horizontal, showsIndicators: false) {
+                        ScrollView {
+                            
                             ForEach(vm.allGenre, id: \.self) { genre in
                                 
                                 Button(action: {
@@ -217,7 +218,7 @@ struct TopRowButtons: View {
                             Image(systemName: "triangle.fill")
                                 .font(.system(size: 10))
                                 .rotationEffect(.degrees(180), anchor: .center)
-                         
+                            
                         }
                     })
                     .buttonStyle(PlainButtonStyle())
