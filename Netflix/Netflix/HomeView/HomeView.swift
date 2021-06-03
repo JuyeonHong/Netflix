@@ -218,7 +218,6 @@ struct TopRowButtons: View {
                             Image(systemName: "triangle.fill")
                                 .font(.system(size: 10))
                                 .rotationEffect(.degrees(180), anchor: .center)
-                            
                         }
                     })
                     .buttonStyle(PlainButtonStyle())
@@ -240,7 +239,7 @@ struct TopRowButtons: View {
                     Spacer()
                 }
             }
-            .padding(.leading, 30)
+            .padding(.leading, 10)
             .padding(.trailing, 30)
             
         }
