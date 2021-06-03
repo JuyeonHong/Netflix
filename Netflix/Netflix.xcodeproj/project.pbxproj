@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		57077EAF2627D739005DA38E /* MovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57077EAE2627D739005DA38E /* MovieDetail.swift */; };
 		57077EB426280EAF005DA38E /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57077EB326280EAF005DA38E /* Episode.swift */; };
+		57308C04266715590084258F /* HomeStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57308C03266715590084258F /* HomeStack.swift */; };
 		57583BBB262D14F500CBA091 /* CustomTabSwitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57583BBA262D14F500CBA091 /* CustomTabSwitcher.swift */; };
 		5770035226524FF800C9150A /* MoreLikeThis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5770035126524FF800C9150A /* MoreLikeThis.swift */; };
 		57933FE32608599C006338C0 /* NetflixApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57933FE22608599C006338C0 /* NetflixApp.swift */; };
@@ -34,6 +35,7 @@
 /* Begin PBXFileReference section */
 		57077EAE2627D739005DA38E /* MovieDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetail.swift; sourceTree = "<group>"; };
 		57077EB326280EAF005DA38E /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
+		57308C03266715590084258F /* HomeStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStack.swift; sourceTree = "<group>"; };
 		57583BBA262D14F500CBA091 /* CustomTabSwitcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabSwitcher.swift; sourceTree = "<group>"; };
 		5770035126524FF800C9150A /* MoreLikeThis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreLikeThis.swift; sourceTree = "<group>"; };
 		57933FDF2608599C006338C0 /* Netflix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Netflix.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,6 +141,7 @@
 			children = (
 				57933FF226086951006338C0 /* HomeView.swift */,
 				5793400826086E67006338C0 /* HomeVM.swift */,
+				57308C03266715590084258F /* HomeStack.swift */,
 			);
 			path = HomeView;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 				57933FFD26086BCD006338C0 /* Movie.swift in Sources */,
 				57933FE32608599C006338C0 /* NetflixApp.swift in Sources */,
 				5770035226524FF800C9150A /* MoreLikeThis.swift in Sources */,
+				57308C04266715590084258F /* HomeStack.swift in Sources */,
 				57583BBB262D14F500CBA091 /* CustomTabSwitcher.swift in Sources */,
 				57BEAC382655F97100A026E2 /* TrailerList.swift in Sources */,
 				5793401326098471006338C0 /* SmallVerticalButton.swift in Sources */,
