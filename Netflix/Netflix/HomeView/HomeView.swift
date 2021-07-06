@@ -15,7 +15,7 @@ struct HomeView: View {
     @State private var movieDetailToShow: Movie? = nil
     
     @State private var topRowSelection: HomeTopRow = .home
-    @State private var homeGenre: HomeGenre = .AllGenre
+    @State private var homeGenre: HomeGenre = .AllGenres
     
     @State private var showGenreSelection = false
     @State private var showTopRowSelection = false
@@ -103,7 +103,7 @@ struct HomeView: View {
                                     showGenreSelection = false
                                     
                                 }, label: {
-                                    if genre == homeGenre{
+                                    if genre == homeGenre {
                                         Text("\(genre.rawValue)")
                                             .bold()
                                     } else {
@@ -257,7 +257,7 @@ enum HomeTopRow: String, CaseIterable {
 }
 
 enum HomeGenre: String {
-    case AllGenre
+    case AllGenres
     case Action
     case Comedy
     case Horror

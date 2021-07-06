@@ -50,7 +50,7 @@ struct HomeStack_Previews: PreviewProvider {
             Color.black
                 .edgesIgnoringSafeArea(.all)
             ScrollView {
-                HomeStack(vm :HomeVM(), topRowSelection: .home, selectedGenre: .AllGenre, movieDetailToShow: .constant(nil))
+                HomeStack(vm :HomeVM(), topRowSelection: .home, selectedGenre: .AllGenres, movieDetailToShow: .constant(nil))
             }
             .foregroundColor(.white)
         }
