@@ -29,11 +29,11 @@ struct SearchBar: View {
                     .cornerRadius(8)
                     .foregroundColor(.white)
                 
-                Button(action: {
+                Button (action: {
                     // clear text
                 }, label: {
                     Image(systemName: "xmark.circle.fill")
-                        .foregroundColor(.white)
+                        .foregroundColor(.graySearchText)
                         .frame(width: 35, height: 35)
                 })
                 .padding(.trailing, 18)
