@@ -32,6 +32,7 @@
 		57BEAC3B265629D800A026E2 /* EpisodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BEAC3A265629D800A026E2 /* EpisodeView.swift */; };
 		57D7CA5E269414A60094BB91 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D7CA5D269414A60094BB91 /* SearchBar.swift */; };
 		57D7CA60269415E70094BB91 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D7CA5F269415E70094BB91 /* Colors.swift */; };
+		57D7CA622694268E0094BB91 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D7CA612694268E0094BB91 /* ActivityIndicator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +62,7 @@
 		57BEAC3A265629D800A026E2 /* EpisodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeView.swift; sourceTree = "<group>"; };
 		57D7CA5D269414A60094BB91 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		57D7CA5F269415E70094BB91 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		57D7CA612694268E0094BB91 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +168,7 @@
 			children = (
 				5793400426086C7E006338C0 /* GlobalHelpers.swift */,
 				57D7CA5F269415E70094BB91 /* Colors.swift */,
+				57D7CA612694268E0094BB91 /* ActivityIndicator.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				5793400E26088F0F006338C0 /* TopMoviePreview.swift in Sources */,
 				57BEAC3B265629D800A026E2 /* EpisodeView.swift in Sources */,
 				57933FFD26086BCD006338C0 /* Movie.swift in Sources */,
+				57D7CA622694268E0094BB91 /* ActivityIndicator.swift in Sources */,
 				57933FE32608599C006338C0 /* NetflixApp.swift in Sources */,
 				5770035226524FF800C9150A /* MoreLikeThis.swift in Sources */,
 				57308C04266715590084258F /* HomeStack.swift in Sources */,
