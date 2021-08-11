@@ -15,6 +15,7 @@
 		577959CE26983D4400919335 /* GenerateMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577959CD26983D4400919335 /* GenerateMovies.swift */; };
 		577B9842269820E100EDA591 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577B9841269820E100EDA591 /* SearchView.swift */; };
 		577B98452698212B00EDA591 /* SearchVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577B98442698212B00EDA591 /* SearchVM.swift */; };
+		5790B33526B7E42500500FCB /* PopularMovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5790B33426B7E42500500FCB /* PopularMovieView.swift */; };
 		57933FE32608599C006338C0 /* NetflixApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57933FE22608599C006338C0 /* NetflixApp.swift */; };
 		57933FE52608599C006338C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57933FE42608599C006338C0 /* ContentView.swift */; };
 		57933FE72608599D006338C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57933FE62608599D006338C0 /* Assets.xcassets */; };
@@ -47,6 +48,7 @@
 		577959CD26983D4400919335 /* GenerateMovies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GenerateMovies.swift; path = ../../../../../../../Downloads/GenerateMovies.swift; sourceTree = "<group>"; };
 		577B9841269820E100EDA591 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		577B98442698212B00EDA591 /* SearchVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVM.swift; sourceTree = "<group>"; };
+		5790B33426B7E42500500FCB /* PopularMovieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularMovieView.swift; sourceTree = "<group>"; };
 		57933FDF2608599C006338C0 /* Netflix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Netflix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57933FE22608599C006338C0 /* NetflixApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetflixApp.swift; sourceTree = "<group>"; };
 		57933FE42608599C006338C0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 				57D7CA5D269414A60094BB91 /* SearchBar.swift */,
 				577B9841269820E100EDA591 /* SearchView.swift */,
 				577B98442698212B00EDA591 /* SearchVM.swift */,
+				5790B33426B7E42500500FCB /* PopularMovieView.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5790B33526B7E42500500FCB /* PopularMovieView.swift in Sources */,
 				5793400526086C7E006338C0 /* GlobalHelpers.swift in Sources */,
 				577959CE26983D4400919335 /* GenerateMovies.swift in Sources */,
 				577B98452698212B00EDA591 /* SearchVM.swift in Sources */,
