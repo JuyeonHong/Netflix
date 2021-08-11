@@ -29,29 +29,30 @@ struct SearchBar: View {
                 TextField("Search", text: $text)
                     .padding(7)
                     .padding(.leading, -7)
+                    .padding(.horizontal, 10)
                     .background(Color.graySearchBackground)
                     .cornerRadius(8)
                     .foregroundColor(.white)
                     .onTapGesture(perform: {
                         isEditing = true
                     })
+                    .animation(.default)
                 
                 if !text.isEmpty {
                     if isLoading {
-                        Button (action: {
+                        Button(action: {
                             text = ""
                         }, label: {
                             ActivityIndicator(style: .medium, animate: .constant(true))
                                 .configure {
                                     $0.color = .white
                                 }
-                            
                         })
                         .padding(.trailing, 32)
                         .frame(width: 35, height: 35)
-                    }
-                    else {
-                        Button (action: {
+                        
+                    } else {
+                        Button(action: {
                             text = ""
                         }, label: {
                             Image(systemName: "xmark.circle.fill")
@@ -61,7 +62,6 @@ struct SearchBar: View {
                         .padding(.trailing, 18)
                     }
                 }
-                
                 
                 if isEditing {
                     Button(action: {
@@ -76,6 +76,7 @@ struct SearchBar: View {
                     .transition(.move(edge: .trailing))
                     .animation(.default)
                 }
+                
                 
             }
         }
@@ -93,4 +94,3 @@ struct SearchBar_Previews: PreviewProvider {
         }
     }
 }
-
