@@ -51,7 +51,7 @@ struct SearchView: View {
                                 Spacer()
                             }
                             
-//                            SearchResultsGrid(movies: vm.searchResults, movieDetailToShow: $movieDetailToShow)
+                            SearchResultsGrid(movies: vm.searchResults, movieDetailToShow: $movieDetailToShow)
                         }
                         
                     }
