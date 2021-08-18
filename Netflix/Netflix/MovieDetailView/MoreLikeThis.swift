@@ -21,7 +21,7 @@ struct MoreLikeThis: View {
         ScrollView {
             LazyVGrid(columns: columns) {
                 ForEach(0..<movies.count) { index in
-                    StandardHomeView(movie: movies[index])
+                    StandardHomeMovie(movie: movies[index])
                 }
             }
         }
