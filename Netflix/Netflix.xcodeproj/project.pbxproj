@@ -38,6 +38,8 @@
 		57CEE46126DCA06C0012FBF5 /* CommingSoon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CEE46026DCA06C0012FBF5 /* CommingSoon.swift */; };
 		57CEE46326DCA0DF0012FBF5 /* NotificationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CEE46226DCA0DF0012FBF5 /* NotificationBar.swift */; };
 		57D5D51326E9E903009501DA /* CommingSoonRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D5D51226E9E903009501DA /* CommingSoonRow.swift */; };
+		57D5D51526EB1F21009501DA /* CommingSoonVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D5D51426EB1F21009501DA /* CommingSoonVM.swift */; };
+		57D5D51726EB206F009501DA /* TrackableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D5D51626EB206F009501DA /* TrackableScrollView.swift */; };
 		57D7CA5E269414A60094BB91 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D7CA5D269414A60094BB91 /* SearchBar.swift */; };
 		57D7CA60269415E70094BB91 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D7CA5F269415E70094BB91 /* Colors.swift */; };
 		57D7CA622694268E0094BB91 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D7CA612694268E0094BB91 /* ActivityIndicator.swift */; };
@@ -76,6 +78,8 @@
 		57CEE46026DCA06C0012FBF5 /* CommingSoon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommingSoon.swift; sourceTree = "<group>"; };
 		57CEE46226DCA0DF0012FBF5 /* NotificationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationBar.swift; sourceTree = "<group>"; };
 		57D5D51226E9E903009501DA /* CommingSoonRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommingSoonRow.swift; sourceTree = "<group>"; };
+		57D5D51426EB1F21009501DA /* CommingSoonVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommingSoonVM.swift; sourceTree = "<group>"; };
+		57D5D51626EB206F009501DA /* TrackableScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackableScrollView.swift; sourceTree = "<group>"; };
 		57D7CA5D269414A60094BB91 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		57D7CA5F269415E70094BB91 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		57D7CA612694268E0094BB91 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
@@ -215,9 +219,11 @@
 		57CEE45F26DCA0420012FBF5 /* CommingSoon */ = {
 			isa = PBXGroup;
 			children = (
+				57D5D51626EB206F009501DA /* TrackableScrollView.swift */,
 				57CEE46026DCA06C0012FBF5 /* CommingSoon.swift */,
 				57CEE46226DCA0DF0012FBF5 /* NotificationBar.swift */,
 				57D5D51226E9E903009501DA /* CommingSoonRow.swift */,
+				57D5D51426EB1F21009501DA /* CommingSoonVM.swift */,
 			);
 			path = CommingSoon;
 			sourceTree = "<group>";
@@ -309,6 +315,7 @@
 				57B10F8C26CCD08E003B2395 /* SearchResultsGrid.swift in Sources */,
 				57D5D51326E9E903009501DA /* CommingSoonRow.swift in Sources */,
 				5793400126086C30006338C0 /* StandardHomeMovie.swift in Sources */,
+				57D5D51726EB206F009501DA /* TrackableScrollView.swift in Sources */,
 				5793400926086E67006338C0 /* HomeVM.swift in Sources */,
 				57BEAC302655F1E600A026E2 /* VideoPreviewImage.swift in Sources */,
 				57933FF326086951006338C0 /* HomeView.swift in Sources */,
@@ -323,6 +330,7 @@
 				57308C04266715590084258F /* HomeStack.swift in Sources */,
 				57D7CA5E269414A60094BB91 /* SearchBar.swift in Sources */,
 				57583BBB262D14F500CBA091 /* CustomTabSwitcher.swift in Sources */,
+				57D5D51526EB1F21009501DA /* CommingSoonVM.swift in Sources */,
 				57BEAC382655F97100A026E2 /* TrailerList.swift in Sources */,
 				5793401326098471006338C0 /* SmallVerticalButton.swift in Sources */,
 				579340172609AF26006338C0 /* PlayButton.swift in Sources */,
