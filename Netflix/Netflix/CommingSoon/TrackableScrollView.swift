@@ -16,7 +16,7 @@ import SwiftUI
 ///
 /// ``` swift
 /// struct ContentView: View {
-///     @State private var scrollViewContentOffset = CGFloat(0) // Content offset available to use
+///     @State private var scrollViewContentO ffset = CGFloat(0) // Content offset available to use
 ///
 ///     var body: some View {
 ///         TrackableScrollView(.vertical, showIndicators: false, contentOffset: $scrollViewContentOffset) {
