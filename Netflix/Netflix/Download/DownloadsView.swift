@@ -18,6 +18,8 @@ struct DownloadsView: View {
                     Text("Smart Downloads")
                     Text("ON")
                         .foregroundColor(.blue)
+                    
+                    Spacer()
                 }
                 .padding()
                 .font(.system(size: 18, weight: .bold))
@@ -45,15 +47,15 @@ struct DownloadsView: View {
                         .padding(.horizontal, 50)
                     
                     Button(action: {
-                        // show shows that can be downloaded
+                        // Show shows that can be downloaded
                     }, label: {
                         Text("See What You Can Download")
                             .foregroundColor(.black)
                             .padding()
                             .background(Color.white)
-                            
                     })
                 }
+                
                 
                 Spacer()
             }
