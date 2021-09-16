@@ -14,7 +14,7 @@ struct Movie: Identifiable {
     
     var categories: [String]
     var genre: HomeGenre = .AllGenres
-    
+     
     // MovieDetail View
     var year: Int
     var rating: String
@@ -38,6 +38,11 @@ struct Movie: Identifiable {
     var promotionHeadline: String?
     
     var trailers: [Trailer]
+    
+    var previewImageName: String
+    var previewVideoURL: URL?
+    
+    
     
     var numberOfSeasonsDisplay: String {
         if let num = numberOfSeasons {
