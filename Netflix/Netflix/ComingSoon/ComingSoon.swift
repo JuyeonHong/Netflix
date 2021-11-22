@@ -1,5 +1,5 @@
 //
-//  CommingSoon.swift
+//  ComingSoon.swift
 //  Netflix
 //
 //  Created by hongjuyeon_dev on 2021/08/30.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CommingSoon: View {
+struct ComingSoon: View {
     
     @State private var showNotificationList = false
     @State private var movieDetailToShow: Movie? = nil
@@ -83,6 +83,6 @@ struct CommingSoon: View {
 
 struct CommingSoon_Previews: PreviewProvider {
     static var previews: some View {
-        CommingSoon()
+        ComingSoon()
     }
 }
