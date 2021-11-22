@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct Movie: Identifiable {
     var id: String
@@ -14,7 +15,7 @@ struct Movie: Identifiable {
     
     var categories: [String]
     var genre: HomeGenre = .AllGenres
-    
+     
     // MovieDetail View
     var year: Int
     var rating: String
@@ -22,6 +23,8 @@ struct Movie: Identifiable {
     
     // Personalization
     var currentEpisode: CurrentEpisodeInfo?
+    
+    var accentColor: Color? = .white
     
     var defaultEpisodeInfo: CurrentEpisodeInfo
     var creators: String
@@ -38,6 +41,11 @@ struct Movie: Identifiable {
     var promotionHeadline: String?
     
     var trailers: [Trailer]
+    
+    var previewImageName: String
+    var previewVideoURL: URL?
+    
+    
     
     var numberOfSeasonsDisplay: String {
         if let num = numberOfSeasons {
