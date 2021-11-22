@@ -21,7 +21,7 @@ struct ContentView: View {
     
     init() {
         UITabBar.appearance().isTranslucent = false
-        UITabBar.appearance().barTintColor = .black
+        UITabBar.appearance().barTintColor = UIColor.black
     }
     
     var body: some View {
@@ -40,7 +40,7 @@ struct ContentView: View {
                     }
                 }
                 
-                // vertical only
+                // VERTICAL ONLY
                 let shouldBePosition = value.translation.height + self.previewNewPos
                 
                 if shouldBePosition < 0 {
@@ -48,6 +48,7 @@ struct ContentView: View {
                 } else {
                     self.previewCurrentPos = shouldBePosition
                 }
+                
             }
             .onEnded { value in
                 if previewHorizontalDragActive {
@@ -57,16 +58,16 @@ struct ContentView: View {
                 
                 let shouldBePosition = value.translation.height + self.previewNewPos
                 
-                if shouldBePosition  < 0 {
+                if shouldBePosition < 0 {
                     self.previewCurrentPos = .zero
                     self.previewNewPos = .zero
                 } else {
-                    let closingPoint = screen.height * 0.2
+                    let closingPoint = screen.size.height * 0.2
                     if shouldBePosition > closingPoint {
                         withAnimation {
                             self.showPreviewFullScreen = false
-                            self.previewNewPos = screen.height + 20
                             self.previewCurrentPos = screen.height + 20
+                            self.previewNewPos = screen.height + 20
                         }
                     } else {
                         withAnimation {
@@ -78,8 +79,8 @@ struct ContentView: View {
                 
                 previewHorizontalDragActive = false
             }
-        
-        ZStack {
+               
+        return ZStack {
             TabView {
                 HomeView(
                     showPreviewFullScreen: $showPreviewFullScreen,
@@ -95,13 +96,13 @@ struct ContentView: View {
                         Text("Search")
                     }.tag(1)
                 
-                CommingSoon()
+                ComingSoon()
                     .tabItem {
                         Image(systemName: "play.rectangle")
                         Text("Coming Soon")
                     }.tag(2)
                 
-                DownloadsView( )
+                DownloadsView()
                     .tabItem {
                         Image(systemName: "arrow.down.to.line.alt")
                         Text("Downloads")
@@ -123,8 +124,8 @@ struct ContentView: View {
             if value {
                 // show fullscreen
                 withAnimation {
-                    self.previewCurrentPos = .zero
-                    self.previewNewPos = .zero
+                    previewCurrentPos = .zero
+                    previewNewPos = .zero
                 }
             } else {
                 // hiding

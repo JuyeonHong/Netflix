@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct PreviewList: View {
-    
     var movies: [Movie]
     
     @Binding var currentSelection: Int
@@ -34,21 +33,21 @@ struct PreviewList: View {
     
     var body: some View {
         ZStack {
-            Color.black.ignoresSafeArea(.all)
+            Color.black.edgesIgnoringSafeArea(.all)
             
-            PagerView(pageCount: movies.count,
-                      currenIndex: $currentSelection,
-                      translation: $currentTranslation,
-                      externalDragGesture: externalDragGesture) {
+            PagerView(
+                pageCount: movies.count,
+                currentIndex: $currentSelection,
+                translation: $currentTranslation,
+                externalDragGesture: externalDragGesture) {
                 
                 ForEach(0..<movies.count) { movieIndex in
                     let movie = movies[movieIndex]
                     
-                    PreviewView(vm: PreviewVM(movie: movie),
-                                playVideo: shouldPlayVideo(index: movieIndex))
+                    PreviewView(
+                        vm: PreviewVM(movie: movie),
+                        playVideo: shouldPlayVideo(index: movieIndex))
                         .frame(width: screen.width)
-                    
-                    
                 }
             }
             .frame(width: screen.width)
@@ -57,17 +56,17 @@ struct PreviewList: View {
 }
 
 //struct ExamplePreviewList: View {
-//
 //    @State private var currentSelection = 0
 //    @State private var isVisible = true
 //
-//
 //    var body: some View {
-//        PreviewList(movies: exampleMovies,
-//                    currentSelection: $currentSelection,
-//                    isVisible: $isVisible, externalDragGesture: externalDragGesture)
+//        PreviewList(
+//            movies: exampleMovies,
+//            currentSelection: $currentSelection,
+//            isVisible: $isVisible)
 //    }
 //}
+//
 //
 //struct PreviewList_Previews: PreviewProvider {
 //    static var previews: some View {
